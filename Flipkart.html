@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flipkart Clone</title>
+  <link rel="stylesheet" href="flip.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Flipkart</div>
+    <input type="text" class="search-bar" placeholder="Search for products, brands and more" />
+    <button onclick="toggleLogin()" class="login-btn">Login</button>
+    <a href="#">Become a Seller</a>
+    <a href="#">More</a>
+    <a href="#">Cart 🛒</a>
+  </nav>
+
+  
+  <div id="loginModal" class="login-modal">
+    <form class="login-form" onsubmit="handleLogin(event)">
+      <h3>Login</h3>
+      <input type="text" id="username" name="username" placeholder="Enter Username" required />
+      <input type="password" id="password" name="password" placeholder="Enter Password" required />
+      <button type="submit">Login</button>
+      <button type="button" onclick="toggleLogin()">Close</button>
+    </form>
+  </div>
+
+  
+  <section class="categories">
+    <div class="category">Mobiles</div>
+    <div class="category">Fashion</div>
+    <div class="category">Electronics</div>
+    <div class="category">Home</div>
+    <div class="category">Appliances</div>
+    <div class="category">Beauty</div>
+    <div class="category">Grocery</div>
+  </section>
+
+  <!-- Banner -->
+  <section class="banner">
+    <img src="flipkart_sale_banner.jpg" alt="Sale Banner"/>
+  </section>
+
+  <section class="products">
+    <h2>Top Deals</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="714zPqD6+-L._AC_UL480_QL65_.jpg" alt="Latest Televison Sets"/>
+        <p>Latest Televison Sets</p>
+        <strong>From ₹9999</strong>
+      </div>
+      <div class="product-card">
+        <img src="Kitchen-Appliances-Category-Page-Banner.png" alt="Kitchen Appliances"/>
+        <p>Kitchen Appliances</p>
+        <strong>From ₹999</strong>
+      </div>
+      <div class="product-card">
+        <img src="do.jfif" alt="Best Selling Mobile Speakers"/>
+        <p>Mobile Speakers</p>
+        <strong>From ₹799</strong>
+      </div>
+      <div class="product-card">
+        <img src="3-h-p-treadmill-for-home-gym-cardio-fitness-3-73-5-without-original-imagp7wfshbzjxft.webp" alt="Fitness Appliances"/>
+        <p>Fitness Equippments</p>
+        <strong>From ₹1999</strong>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Flipkart Clone. All rights reserved.</p>
+  </footer>
+
+  
+  <script src="flip.js"></script>
+</body>
+</html>
